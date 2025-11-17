@@ -16,6 +16,7 @@ import image21 from "./assets/image21.png";
 import image22 from "./assets/image22.png";
 import image23 from "./assets/image23.png";
 import image24 from "./assets/image24.png";
+import flower from "./assets/flower.png";
 
 import big2 from "./assets/big2.png";
 
@@ -47,7 +48,13 @@ const BenefitRow = ({ iconSrc, title, subtitle }: BenefitRowProps) => (
       gap: "1rem",
     }}
   >
-    <img src={iconSrc} alt="" width={40} height={40} />
+    <img
+      src={iconSrc}
+      alt=""
+      width={40}
+      height={40}
+      style={{ objectFit: "contain" }}
+    />
     <div style={{ display: "flex", flexDirection: "column" }}>
       <Typography.Text tag="p" view="primary-small" style={{ marginBottom: 0 }}>
         {title}
@@ -73,7 +80,7 @@ export const App = () => {
 
   const handleClickOne = ({ img, price }: { img: string; price: number }) => {
     window.gtag("event", "6649_get_sub", {
-      variant_name: "ghk_6649_1",
+      variant_name: "ghk_6649_6",
     });
 
     setImg(img);
@@ -83,7 +90,7 @@ export const App = () => {
 
   const handleClickSubmit = () => {
     window.gtag("event", "6649_get_sub_2", {
-      variant_name: "ghk_6649_1",
+      variant_name: "ghk_6649_6",
     });
 
     LS.setItem(LSKeys.ShowThx, true);
@@ -197,6 +204,11 @@ export const App = () => {
                         gap: "1rem",
                       }}
                     >
+                      <BenefitRow
+                        iconSrc={flower}
+                        title="Розыгрыш 200+ призов"
+                        subtitle="Каждый месяц"
+                      />
                       <BenefitRow
                         iconSrc={image10}
                         title="4 категории кэшбэка"

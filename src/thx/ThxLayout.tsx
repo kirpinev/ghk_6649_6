@@ -9,7 +9,7 @@ import { useEffect } from "react";
 export const ThxLayout = () => {
   const submit = () => {
     window.gtag("event", "6649_get_real_sub", {
-      variant_name: "ghk_6649_1",
+      variant_name: "ghk_6649_6",
     });
   };
 
