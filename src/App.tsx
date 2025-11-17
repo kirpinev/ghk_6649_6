@@ -13,7 +13,6 @@ import image18 from "./assets/image18.png";
 import image19 from "./assets/image19.png";
 import image20 from "./assets/image20.png";
 import image21 from "./assets/image21.png";
-import image22 from "./assets/image22.png";
 import image23 from "./assets/image23.png";
 import image24 from "./assets/image24.png";
 import flower from "./assets/flower.png";
@@ -152,7 +151,7 @@ export const App = () => {
                           view="primary-small"
                           style={{ marginBottom: 0, color: "white" }}
                         >
-                          Первый месяц бесплатно, дальше — 399 ₽ в месяц
+                          399 ₽ в месяц
                         </Typography.Text>
                       </div>
                       <img src={slider2Hero} alt="" width={80} height={80} />
@@ -222,7 +221,7 @@ export const App = () => {
                       <BenefitRow
                         iconSrc={image12}
                         title="2 прокрутки барабана"
-                        subtitle="Выше шанс выиграть до 100% кэшбэка"
+                        subtitle="Шанс выиграть до 100% кэшбэка"
                       />
                       <BenefitRow
                         iconSrc={image13}
@@ -255,7 +254,7 @@ export const App = () => {
                     >
                       <BenefitRow
                         iconSrc={image15}
-                        title="Семейный доступ за 300 ₽"
+                        title="Семейный доступ за 100 ₽"
                         subtitle="До 2 участников на уровне"
                       />
                       <BenefitRow
@@ -265,7 +264,7 @@ export const App = () => {
                       />
                       <BenefitRow
                         iconSrc={image17}
-                        title="0,24% комиссия за сделки на бирже"
+                        title="1,24% комиссия за сделки на бирже"
                         subtitle="С ценными бумагами и валютой"
                       />
                       <BenefitRow
@@ -289,14 +288,9 @@ export const App = () => {
                         subtitle="В любые банки другим людям"
                       />
                       <BenefitRow
-                        iconSrc={image22}
-                        title="Снятие наличных до 200 000 ₽"
-                        subtitle="Без комиссии в любых банках России"
-                      />
-                      <BenefitRow
                         iconSrc={image23}
                         title="Бесплатные уведомления"
-                        subtitle="По дебетовой Альфа-Карте"
+                        subtitle="По дебетовым картам"
                       />
                       <BenefitRow
                         iconSrc={image24}
